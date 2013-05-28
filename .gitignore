@@ -6,3 +6,5 @@ bunsen_beamer_example.snm
 bunsen_beamer_example.toc
 macros.aux
 meta.txt
+*.swp
+/tmp
