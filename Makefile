@@ -7,6 +7,11 @@ all: $(PDF) $(GNUPLOT) $(INKSCAPE)
 	xelatex --no-pdf -output-directory=/home/cap/code/drbunsen-beamer/tmp/ bunsen_beamer_example.tex
 	xdvipdfmx tmp/bunsen_beamer_example.xdv
 
+evince:
+	xelatex --no-pdf -output-directory=/home/cap/code/drbunsen-beamer/tmp/ bunsen_beamer_example.tex
+	xdvipdfmx tmp/bunsen_beamer_example.xdv
+	evince bunsen_beamer_example.pdf
+
 prepare:
 	mkdir tmp
 
